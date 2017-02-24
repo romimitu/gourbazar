@@ -40,7 +40,7 @@
         <?php echo Form::label('promo_details', 'Promotion', ['class'=>'col-sm-2 control-label']); ?>
 
         <div class="col-md-10">
-            <?php echo Form::textarea('promo_details',isset($product->promo_details) ? $product->promo_details : null,['class'=> 'form-control', 'id'=>'details']); ?>
+            <?php echo Form::textarea('promo_details',isset($product->promo_details) ? $product->promo_details : null,['class'=> 'form-control', 'id'=>'details_two']); ?>
 
         </div>
     </div>

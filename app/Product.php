@@ -8,8 +8,8 @@ class Product extends Model
 {
     protected $fillable=['name','description','price','category','promo_details','image','stock'];
     
-    public function reviews()
+    public function review()
     {
-        return $this->belongsTo(Review::class);
+        return $this->hasMany(Review::class);
     }
 }

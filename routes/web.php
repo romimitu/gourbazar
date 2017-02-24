@@ -34,5 +34,16 @@ Route::get('/ad', function () {
 /* Ad-min Panel Routes */
 
 Route::resource('product','ProductController');
+Route::resource('blog','BlogController');
+Route::resource('gallery','GalleryController');
+Route::resource('page','PageController');
+Route::resource('service','ServiceController');
+Route::resource('member','TeamController');
+Route::get('orders','AdminController@OrderList');
+Route::get('message','AdminController@ContactMessage');
+Route::get('review','AdminController@Review');
+
+
+Route::post('message/{id}', 'AdminController@destroyMessage');
 
 

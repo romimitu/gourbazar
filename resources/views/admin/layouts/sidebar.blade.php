@@ -41,24 +41,117 @@
                     </ul>
                 </li>
                 <li class="nav-item  ">
+                    <a href="/orders">
+                        <i class="icon-basket"></i>
+                        <span class="title">Order</span>
+                    </a>
+                </li>
+                <li class="nav-item  ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-puzzle"></i>
-                        <span class="title">Components</span>
+                        <span class="title">Our Blog</span>
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item  ">
-                            <a href="components_date_time_pickers.html" class="nav-link ">
-                                <span class="title">Date & Time Pickers</span>
+                            <a href="/blog" class="nav-link ">
+                                <span class="title">All Blog</span>
                             </a>
                         </li>
                         <li class="nav-item  ">
-                            <a href="components_color_pickers.html" class="nav-link ">
-                                <span class="title">Color Pickers</span>
-                                <span class="badge badge-danger">2</span>
+                            <a href="/blog/create" class="nav-link ">
+                                <span class="title">Add New Blog</span>
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-bar-chart"></i>
+                        <span class="title">Gallery</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item  ">
+                            <a href="/gallery" class="nav-link ">
+                                <span class="title">Gallery Items</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="/gallery/create" class="nav-link ">
+                                <span class="title">Add New Item</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-user"></i>
+                        <span class="title">Team Member</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item  ">
+                            <a href="/member" class="nav-link ">
+                                <span class="title">All Member</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="/member/create" class="nav-link ">
+                                <span class="title">Add Member</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-layers"></i>
+                        <span class="title">Pages</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item  ">
+                            <a href="/page" class="nav-link ">
+                                <span class="title">Pages List</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="/page/create" class="nav-link ">
+                                <span class="title">Add Page</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-social-dribbble"></i>
+                        <span class="title">Services</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item  ">
+                            <a href="/service" class="nav-link ">
+                                <span class="title">Our Services</span>
+                            </a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a href="/service/create" class="nav-link ">
+                                <span class="title">Add Service</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item  ">
+                    <a href="/review">
+                        <i class="icon-pointer"></i>
+                        <span class="title">Product Review</span>
+                    </a>
+                </li>
+                <li class="nav-item  ">
+                    <a href="/message">
+                        <i class="icon-feed"></i>
+                        <span class="title">Contact Message</span>
+                    </a>
                 </li>
             </ul>
             <!-- END SIDEBAR MENU -->

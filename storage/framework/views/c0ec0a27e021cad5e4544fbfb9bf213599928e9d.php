@@ -20,5 +20,11 @@
     <link href="/admin/css/layout.min.css" rel="stylesheet" type="text/css" />
     <link href="/admin/css/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
     <!-- END THEME LAYOUT STYLES -->
+    <!-- Editor -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+    <!-- Include Editor style. -->
+    <link href="/admin/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link href="/admin/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
     <?php echo $__env->yieldContent('css'); ?>
 </head>

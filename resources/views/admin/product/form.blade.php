@@ -29,7 +29,7 @@
     <div class="form-group">
         {!! Form::label('promo_details', 'Promotion', ['class'=>'col-sm-2 control-label']) !!}
         <div class="col-md-10">
-            {!! Form::textarea('promo_details',isset($product->promo_details) ? $product->promo_details : null,['class'=> 'form-control', 'id'=>'details']) !!}
+            {!! Form::textarea('promo_details',isset($product->promo_details) ? $product->promo_details : null,['class'=> 'form-control', 'id'=>'details_two']) !!}
         </div>
     </div>
     <div class="form-group last">
@@ -38,10 +38,11 @@
             <div class="fileinput fileinput-new" data-provides="fileinput">
                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
                 @if(isset($product->image))
-                    <img src="/{{$product->image}}" alt="" /> </div>
+                    <img src="/{{$product->image}}" alt="" />
                 @else
-                    <img src="http://www.placehold.it/200x150/" alt="" /> </div>
+                    <img src="http://www.placehold.it/200x150/" alt="" /> 
                 @endif
+                </div>
                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                 <div>
                     <span class="btn default btn-file">
