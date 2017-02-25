@@ -20,16 +20,21 @@ Route::get('/', function () {
 Route::get('/shop', function () {
     return view('public.shop');
 });
-Route::get('/product', function () {
-    return view('public.product');
+Route::get('/our-service', function () {
+    return view('public.service');
+});
+Route::get('/single-product', function () {
+    return view('public.product-single');
 });
 Route::get('/faq', function () {
     return view('public.faq');
 });
-Route::get('/ad', function () {
-    return view('admin.index');
+Route::get('/our-blog', function () {
+    return view('public.blog');
 });
 
+Route::get('/our-service/{id}/{slug}', 'PublicController@servicedetails');
+Route::get('/our-blog/{id}/{slug}', 'PublicController@blogdetails');
 
 /* Ad-min Panel Routes */
 

@@ -3,7 +3,7 @@
         <?php echo Form::label('title','Title',['class'=>'col-sm-2 control-label']); ?>
 
         <div class="col-md-10">
-            <?php echo Form::text('title',isset($product->title) ? $product->title : null, ['class'=> 'form-control']); ?>
+            <?php echo Form::text('title',isset($service->title) ? $service->title : null, ['class'=> 'form-control']); ?>
 
         </div>
     </div>
@@ -11,7 +11,7 @@
         <?php echo Form::label('description', 'Description', ['class'=>'col-sm-2 control-label']); ?>
 
         <div class="col-md-10">
-            <?php echo Form::textarea('description',isset($product->description) ? $product->description : null,['class'=> 'form-control', 'id'=>'details']); ?>
+            <?php echo Form::textarea('description',isset($service->description) ? $service->description : null,['class'=> 'form-control', 'id'=>'details']); ?>
 
         </div>
     </div>
@@ -20,8 +20,8 @@
         <div class="col-md-10">
             <div class="fileinput fileinput-new" data-provides="fileinput">
                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                <?php if(isset($product->image)): ?>
-                    <img src="/<?php echo e($product->image); ?>" alt="" /> </div>
+                <?php if(isset($service->image)): ?>
+                    <img src="/<?php echo e($service->image); ?>" alt="" /> </div>
                 <?php else: ?>
                     <img src="http://www.placehold.it/200x150/" alt="" /> </div>
                 <?php endif; ?>

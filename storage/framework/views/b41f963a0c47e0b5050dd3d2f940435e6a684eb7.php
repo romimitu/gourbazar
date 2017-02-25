@@ -3,7 +3,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <main class="main-content" role="main">
-        <div class="page-header" style="background-image: url(/public/images/generic_header_image2966.jpg)">
+        <div class="page-header" style="background-image: url(/frontend/images/generic_header_image2966.jpg)">
             <div class="page-header-container hover-target">
                 <div class="page-header-content underline-animation">
                     <h2>FAQ</h2>

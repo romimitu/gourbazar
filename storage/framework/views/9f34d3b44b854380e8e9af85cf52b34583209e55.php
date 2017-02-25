@@ -34,15 +34,16 @@
 	          	<ul class="nav navbar-nav navbar-right">
 	              	<li><a href="/shop">MANGO SHOP</a></li>
 	              	<li><a href="#">ABOUT US</a></li>
-	              	<li><a href="#">SERVICES</a></li>
+	              	<li><a href="/our-service">SERVICES</a></li>
 	          		<li class="dropdown">
 		              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE MENU<span class="caret"></span></a>
 		              	<ul class="dropdown-menu">
-			                <li><a href="/product">PRODUCT</a></li>
+			                <li><a href="/single-product">Single PRODUCT</a></li>
+			                <li><a href="/single-blog">Single Blog</a></li>
 			                <li><a href="/faq">FAQ</a></li>
 		              	</ul>
 		            </li>
-	              	<li><a href="#">BLOG</a></li>
+	              	<li><a href="/our-blog">BLOG</a></li>
 	              	<li><a href="#">CONTACT</a></li>
 	          	</ul>
 	        </div>

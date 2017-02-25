@@ -178,6 +178,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*Gourbazar Provider*/
+        App\Providers\HomeProvider::class,
+        App\Providers\PublicProvider::class,
+
     ],
 
     /*

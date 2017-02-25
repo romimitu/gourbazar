@@ -45,7 +45,7 @@ a:hover{text-decoration: none;}
     
 .interactive-picture {position: relative;background-size: cover;background-position: center center;margin: 0px auto}
 .interactive-picture:before {content: "";display: block;padding-top: 45%}
-.homepage-hero-video,.homepage-hero-image {display: block;background-size: cover;background-position: center center;width: 100%;height: 100%;
+.homepage-hero-video,.homepage-hero-image {display: block;background-size: cover;background-position: bottom;width: 100%;height: 100%;
     overflow: hidden;top: 0;right: 0;z-index: 1}
 .homepage-hero-video video,.homepage-hero-video iframe,.homepage-hero-image video,.homepage-hero-image iframe {min-width: 100%;min-height: 100%}
 .interactive-pin {position: absolute;padding: 30px 50px;margin-left: -55px;margin-top: -45px;
@@ -61,13 +61,13 @@ a:hover{text-decoration: none;}
 @media screen and (max-width: 1200px) {
     .interactive-pin {margin-left: -20px;margin-top: -20px}
 }
-.interactive-pin a.picture-target {color: white;font-family: "futura-pt", Arial, sans-serif}
-.interactive-pin a.picture-target:before {background: rgba(232, 178, 157, 0.35);border-radius: 100%;content: "";display: block;height: 60px;
+.interactive-pin a.picture-target {color: 000;font-family: "futura-pt", Arial, sans-serif}
+.interactive-pin a.picture-target:before {background: rgba(0, 255, 48, 0.35);border-radius: 100%;content: "";display: block;height: 60px;
     position: absolute;width: 60px;left: 24px;top: 13.3px}
 @media screen and (max-width: 480px) {
     .interactive-pin a.picture-target:before {height: 40px;width: 40px;left: -6px;top: 2px}
 }
-.interactive-pin a.picture-target:after {background: #e8b29d;border-radius: 100%;content: "";display: block;height: 40px;width: 40px;position: absolute;
+.interactive-pin a.picture-target:after {background: #2dda07;border-radius: 100%;content: "";display: block;height: 40px;width: 40px;position: absolute;
     top: 23px;left: 34px;color: white;z-index: -1}
 @media screen and (max-width: 480px) {
     .interactive-pin a.picture-target:after {height: 25px;width: 25px;top: 9px;left: 1px}

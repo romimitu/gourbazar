@@ -2,13 +2,13 @@
     <div class="form-group">
         {!! Form::label('title','Title',['class'=>'col-sm-2 control-label']) !!}
         <div class="col-md-10">
-            {!! Form::text('title',isset($product->title) ? $product->title : null, ['class'=> 'form-control']) !!}
+            {!! Form::text('title',isset($service->title) ? $service->title : null, ['class'=> 'form-control']) !!}
         </div>
     </div>
     <div class="form-group">
         {!! Form::label('description', 'Description', ['class'=>'col-sm-2 control-label']) !!}
         <div class="col-md-10">
-            {!! Form::textarea('description',isset($product->description) ? $product->description : null,['class'=> 'form-control', 'id'=>'details']) !!}
+            {!! Form::textarea('description',isset($service->description) ? $service->description : null,['class'=> 'form-control', 'id'=>'details']) !!}
         </div>
     </div>
     <div class="form-group last">
@@ -16,8 +16,8 @@
         <div class="col-md-10">
             <div class="fileinput fileinput-new" data-provides="fileinput">
                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
-                @if(isset($product->image))
-                    <img src="/{{$product->image}}" alt="" /> </div>
+                @if(isset($service->image))
+                    <img src="/{{$service->image}}" alt="" /> </div>
                 @else
                     <img src="http://www.placehold.it/200x150/" alt="" /> </div>
                 @endif

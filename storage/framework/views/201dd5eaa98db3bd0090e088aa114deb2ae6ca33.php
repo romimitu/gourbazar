@@ -2,7 +2,7 @@
 GOUR BAZAR | BUY MANGO ONLINE
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
- 	<div class="interactive-picture homepage-hero-image" style="background-image: url('/frontend/images/homepage_interactive_image.jpg');">
+ 	<div class="interactive-picture homepage-hero-image" style="background-image: url('/frontend/images/slider2.jpg');">
 		<!-- <div class="interactive-pin" id="ip1"><a href="#" class="picture-target" target="_self">1</a></div>  -->
 		<div class="interactive-pin" id="ip2"><a href="#" class="picture-target" target="_self">1</a></div>
 		<div class="interactive-pin" id="ip3"><a href="#" class="picture-target" target="_self">2</a></div>
@@ -58,8 +58,8 @@ GOUR BAZAR | BUY MANGO ONLINE
 	                <h3>We believe in the art of making.</h3>
 	                <p>Which, simply put, means our process is just as important as our product.</p>
 	            </div>
-	            <div class="col-sm-6 img-center">
-	                <img src="/frontend/images/half_half_image2966.jpg" alt="" />
+	            <div class="col-sm-4 col-sm-offset-1 img-center">
+	                <img class="img-responsive" src="/frontend/images/mango.jpg" alt="" />
 	            </div>
 	        </div>
         </div>
@@ -67,12 +67,13 @@ GOUR BAZAR | BUY MANGO ONLINE
 
 	<div class="one-thirds-block">
         <div class="container ">
+		<?php $__currentLoopData = $services; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $service): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           	<div class="grid_item col-sm-4">
-	            <div class="third-item" style="background-image:url(/frontend/images/one_third_1.jpg)">
+	            <div class="third-item" style="background-image:url(/<?php echo e($service->image); ?>)">
 	             	<div class="one-third-cta">
 		                <div class="one-third-cta-container">
 		                  	<a href="#">
-			                    <h3>Mango Shop</h3>                    
+			                    <h3><?php echo e($service->title); ?></h3>                    
 			                    <ul>
 			                      <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
 			                      <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -82,52 +83,19 @@ GOUR BAZAR | BUY MANGO ONLINE
 		                </div>
 	              	</div>
 	            </div>
-	            <p class="one-third-header">MANGO</p>
+	            <p class="one-third-header"><?php echo e($service->title); ?></p>
           	</div>
-          <div class="grid_item col-sm-4">
-            <div class="third-item" style="background-image:url(/frontend/images/one_third_2.jpg)">
-              	<div class="one-third-cta">
-	                <div class="one-third-cta-container">
-	                  	<a href="#">
-		                    <h3>Our Services</h3>                    
-		                    <ul>
-		                      <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-		                      <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-		                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-		                    </ul>
-	                 	</a>
-	                </div>
-              	</div>
-            </div>
-            <p class="one-third-header">SERVICES</p>
-          </div>
-          <div class="grid_item col-sm-4">
-            <div class="third-item" style="background-image:url(/frontend/images/one_third_3.jpg)">
-              	<div class="one-third-cta">
-	                <div class="one-third-cta-container">
-	                  	<a href="#">
-		                    <h3>Stone Supply</h3>                    
-		                    <ul>
-		                      <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
-		                      <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
-		                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-		                    </ul>
-	                  	</a>
-	                </div>
-              	</div>
-            </div>
-            <p class="one-third-header">STONE</p>
-          </div>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div>
     </div>
     <div class="homepage-custom">
       	<div class="homepage-custom__parallax">
 	        <div class="text-center">
-	          	<a href="#">
+	          	<a href="/shop">
 		            <div class="mega-button">
 		              	<div class="mega-button-content underline-animation hover-target">
-			                <span>Shop</span>
-			                <h1>PURE & TASTY MANGO</h1>
+			                <span>আম ক্রয় করুন</span>
+			                <h1>সুস্বাদু ও ফর্মালিন মুক্ত বিশুদ্ধ আম</h1>
 		              	</div>
 		            </div>
 	          	</a>
@@ -138,8 +106,8 @@ GOUR BAZAR | BUY MANGO ONLINE
 	<div class="homepage-collection">
       	<div class="container">      
 	        <div class="custom-section-header">
-		      	<h1 class="section-title">Featured Favorites</h1>
-		      	<h4 class="section-subtitle">Our recent top sellers</h4>
+		      	<h1 class="section-title">আপনার পছন্দের আম</h1>
+		      	<h4 class="section-subtitle">এই মুহূর্তে সব থেকে বেশি বিক্রিত</h4>
 	        </div>      
 	        <div class="grid-uniform">
 	          	<div class="grid_item col-sm-4 product-grid-item">
@@ -203,40 +171,22 @@ GOUR BAZAR | BUY MANGO ONLINE
     <div class="custom-section">
       	<div class="container">
 	        <div class="custom-section-header">
-	          	<h1 class="section-title">As Seen In</h1>
-	          	<h4 class="section-subtitle">We’ve received some love from these fine folks</h4>
+	          	<h1 class="section-title">আমাদের ব্লগ</h1>
+	          	<h4 class="section-subtitle">আম ও আমাদের সর্বশেষ অবস্থা জানতে সর্বদা চোখ রাখুন</h4>
 	        </div>
 	        <div class="simple-carousel">
-	          	<div class="tile-image hover-target" style="background-image: url(/frontend/images/simple_carousel_1_image2966.jpg)">
+			<?php $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+	          	<div class="tile-image hover-target" style="background-image: url(/<?php echo e($blog->image); ?>)">
 	             	<a target="_blank" href="#"> 
 	            		<div class="tile-cta">
 	              			<div class="border-tile underline-animation">
-				                <p>As Seen In</p>
-				                <h3>The Everygirl</h3>
+				                <p>বিস্তারিত পড়ুন</p>
+				                <h3><?php echo e($blog->title); ?></h3>
 	              			</div>
 	            		</div>
 	             	</a> 
 	          	</div>
-	          	<div class="tile-image hover-target" style="background-image: url(/frontend/images/simple_carousel_2_image2966.jpg)">
-		            <a target="_blank" href="#"> 
-			            <div class="tile-cta">
-			              	<div class="border-tile underline-animation">
-				                <p>As Seen In</p>
-				                <h3>Emily Henderson</h3>
-			              	</div>
-			            </div>
-		            </a> 
-	          	</div>
-	          	<div class="tile-image hover-target" style="background-image: url(/frontend/images/simple_carousel_3_image2966.jpg)">
-	            	<a target="_blank" href="#"> 
-			            <div class="tile-cta">
-			              	<div class="border-tile underline-animation">
-				                <p>As Seen In</p>
-				                <h3>Traditional Home</h3>
-			              	</div>
-			            </div>
-	             	</a> 
-	          	</div>
+			<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 	        </div>
       	</div>
     </div>
@@ -245,8 +195,8 @@ GOUR BAZAR | BUY MANGO ONLINE
       	<div class="container">
 	        <div class="back-2-back-section">  
 	          	<div class="custom-section-header">
-		            <h1 class="section-title">Our Process</h1>
-		            <h4 class="section-subtitle">From our studio, to your home</h4>
+		            <h1 class="section-title">আমাদের কার্যধারা </h1>
+		            <h4 class="section-subtitle">সরাসরি আমের রাজধানী থেকে আপনার বাড়ি</h4>
 	          	</div>  
 	          	<div class="process-carousel story-carousel">
 		            <div class="tile-image " style="background-image: url(/frontend/images/home_process_1_image2966.jpg)">
