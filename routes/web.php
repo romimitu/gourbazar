@@ -29,8 +29,14 @@ Route::get('/single-product', function () {
 Route::get('/faq', function () {
     return view('public.faq');
 });
+Route::get('/about-us', function () {
+    return view('public.about-us');
+});
 Route::get('/our-blog', function () {
     return view('public.blog');
+});
+Route::get('/contact-us', function () {
+    return view('public.contact-us');
 });
 
 Route::get('/our-service/{id}/{slug}', 'PublicController@servicedetails');

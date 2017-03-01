@@ -33,7 +33,7 @@
 	        <div id="navbar" class="navbar-collapse collapse">
 	          	<ul class="nav navbar-nav navbar-right">
 	              	<li><a href="/shop">MANGO SHOP</a></li>
-	              	<li><a href="#">ABOUT US</a></li>
+	              	<li><a href="/about-us">ABOUT US</a></li>
 	              	<li><a href="/our-service">SERVICES</a></li>
 	          		<li class="dropdown">
 		              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE MENU<span class="caret"></span></a>
@@ -44,7 +44,7 @@
 		              	</ul>
 		            </li>
 	              	<li><a href="/our-blog">BLOG</a></li>
-	              	<li><a href="#">CONTACT</a></li>
+	              	<li><a href="/contact-us">CONTACT</a></li>
 	          	</ul>
 	        </div>
       	</div>
