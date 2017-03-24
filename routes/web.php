@@ -23,14 +23,8 @@ Route::get('/shop', function () {
 Route::get('/our-service', function () {
     return view('public.service');
 });
-Route::get('/single-product', function () {
-    return view('public.product-single');
-});
 Route::get('/faq', function () {
     return view('public.faq');
-});
-Route::get('/about-us', function () {
-    return view('public.about-us');
 });
 Route::get('/our-blog', function () {
     return view('public.blog');
@@ -39,8 +33,15 @@ Route::get('/contact-us', function () {
     return view('public.contact-us');
 });
 
+Route::get('/cart', function () {
+    return view('public.cart');
+});
+
+Route::get('/about-us', 'PublicController@TeamMember');
+Route::get('/shop', 'PublicController@allProduct');
 Route::get('/our-service/{id}/{slug}', 'PublicController@servicedetails');
 Route::get('/our-blog/{id}/{slug}', 'PublicController@blogdetails');
+Route::get('/products/{id}/{slug}', 'PublicController@Productdetails');
 
 /* Ad-min Panel Routes */
 

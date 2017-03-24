@@ -1,6 +1,6 @@
-body,input,textarea,button,select {font-size: 14px;line-height: 1.6;font-family: "adobe-caslon-pro", Garamond, Times New Roman, serif;color: #4a4a4a;
+body,input,textarea,button,select {font-size: 16px;line-height: 1.6;font-family: "adobe-caslon-pro", Garamond, Times New Roman, serif;color: #4a4a4a;
 font-weight: normal;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust: 100%}
-main p{margin: 0 0 15px 0;}
+main p{margin: 0 0 15px 0;font-size: 20px;}
 h1,h2,,h3,h4,h5,h6{font-weight: normal;margin: 0 0 0.75em;line-height: 1.4}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{text-decoration: none;font-weight: inherit}
 h1{font-size: 2.57143em}
@@ -119,4 +119,4 @@ a:hover{text-decoration: none;}
     50% {-webkit-transform: scale(1.1)}
     100% {-webkit-transform: scale(0.98)}
 }
-a{color: #4a4a4a;text-decoration: none;background: transparent;}
+a{color: #003c6c;text-decoration: none;background: transparent;}

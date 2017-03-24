@@ -16,7 +16,7 @@
 		          	</ul>
 		        </div>        
 		        <div class="copyright">
-		          	<a href="/">&copy; COPYRIGHT 2016 GourBazar</a> <br> <a href="#">MADE BY RoMi</a>
+		          	<a href="/">&copy; কপিরাইট ২০১৭ গৌড়বাজার</a> <br> <a href="#">MADE BY RoMi</a>
 		        </div>
 		        <div class="footer-centered-logo">
 		          	<i class="icon icon-ra_monogram"></i>

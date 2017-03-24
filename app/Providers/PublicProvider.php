@@ -11,6 +11,7 @@ class PublicProvider extends ServiceProvider
     {        
         View::composer('public.blog', 'App\Http\ViewComposer\PublicComposer@allBlog');
         View::composer('public.service', 'App\Http\ViewComposer\PublicComposer@allService');
+        View::composer('public.index', 'App\Http\ViewComposer\PublicComposer@homeProduct');
     }
 
     public function register()

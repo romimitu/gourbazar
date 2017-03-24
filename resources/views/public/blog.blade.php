@@ -4,7 +4,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 @endsection
 @section('content')
     <main class="main-content" role="main">
-        <div class="page-header" style="background-image: url(/frontend/images/generic_header_image2966.jpg)">
+        <div class="page-header" style="background-image: url(/frontend/images/blog-banner.jpg)">
             <div class="page-header-container hover-target">
                 <div class="page-header-content underline-animation">
                     <h2>আমাদের ব্লগ</h2>
@@ -23,7 +23,7 @@ GOUR BAZAR | BUY MANGO ONLINE
                             <div class="blog-index-image" style="background-image: url('/{{$blog->image}}');"></div>
                         </a>
                         <div class="blog-index-copy">
-                            <a href="{{ url('our-blog', [$blog->id, str_slug($blog->title, '-')] )}}"><h4>{{$blog->title}}</h4></a>
+                            <h3>{{$blog->title}}</h3>
                             <a href="{{ url('our-blog', [$blog->id, str_slug($blog->title, '-')] )}}" class="text-center">READ MORE</a>
                         </div>                    
                     </div>

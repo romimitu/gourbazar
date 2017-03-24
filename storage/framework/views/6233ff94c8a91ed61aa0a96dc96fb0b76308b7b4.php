@@ -29,22 +29,24 @@ GOUR BAZAR | BUY MANGO ONLINE
                 </div>   
                 <div class="col-sm-9">    
                     <div class="grid-uniform collection-products">
+                    <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <div class="product-grid-item col-sm-4">
-                            <a class="product-image-tile" href="#">
+                            <a class="product-image-tile" href="<?php echo e(url('products', [$product->id, make_slug($product->name)] )); ?>">
                                 <div class="reveal">
-                                    <img class="img-responsive" src="/frontend/images/pillow-front-small.jpg" alt="Pillow in Multi" />      
-                                    <div class="hidden">
-                                        <img class="img-responsive" src="/frontend/images/pillow-back-small.jpg" alt="Pillow in Multi" />
-                                    </div>      
+                                    <img class="img-responsive" src="/<?php echo e($product->image); ?>" alt="" />      
+                                    <!-- <div class="hidden">
+                                            <img class="img-responsive" src="/frontend/images/pillow-back-small.jpg" alt="Pillow in Multi" />
+                                        </div>   -->    
                                 </div>
                             </a>
                             <div class="figcaption hover">
-                                <a href="#">
-                                    <p class="collection-product-title">Pillow in Multi</p>
-                                    <p class="price_wrapper"><span class="price"><span class="money">$239.00</span></span></p>
+                                <a href="<?php echo e(url('products', [$product->id, make_slug($product->name)] )); ?>">
+                                    <p class="collection-product-title"><?php echo e($product->name); ?></p>
+                                    <p class="price_wrapper">প্রতি কেজি <span class="price"><span class="money">৳ <?php echo e($product->price); ?></span></span></p>
                                 </a>
                             </div>
                         </div>
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>

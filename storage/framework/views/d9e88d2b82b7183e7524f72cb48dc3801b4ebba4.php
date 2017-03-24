@@ -8,6 +8,14 @@
         </div>
     </div>
     <div class="form-group">
+        <?php echo Form::label('position','Position',['class'=>'col-sm-2 control-label']); ?>
+
+        <div class="col-md-10">
+            <?php echo Form::text('position',isset($member->position) ? $member->position : null, ['class'=> 'form-control']); ?>
+
+        </div>
+    </div>
+    <div class="form-group">
         <?php echo Form::label('description', 'Description', ['class'=>'col-sm-2 control-label']); ?>
 
         <div class="col-md-10">
@@ -41,10 +49,11 @@
             <div class="fileinput fileinput-new" data-provides="fileinput">
                 <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
                 <?php if(isset($member->image)): ?>
-                    <img src="/<?php echo e($member->image); ?>" alt="" /> </div>
+                    <img src="/<?php echo e($member->image); ?>" alt="" />
                 <?php else: ?>
-                    <img src="http://www.placehold.it/200x150/" alt="" /> </div>
+                    <img src="http://www.placehold.it/200x150/" alt="" /> 
                 <?php endif; ?>
+                </div>
                 <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
                 <div>
                     <span class="btn default btn-file">

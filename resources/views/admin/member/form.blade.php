@@ -6,6 +6,12 @@
         </div>
     </div>
     <div class="form-group">
+        {!! Form::label('position','Position',['class'=>'col-sm-2 control-label']) !!}
+        <div class="col-md-10">
+            {!! Form::text('position',isset($member->position) ? $member->position : null, ['class'=> 'form-control']) !!}
+        </div>
+    </div>
+    <div class="form-group">
         {!! Form::label('description', 'Description', ['class'=>'col-sm-2 control-label']) !!}
         <div class="col-md-10">
             {!! Form::textarea('description',isset($member->description) ? $member->description : null,['class'=> 'form-control', 'id'=>'details']) !!}

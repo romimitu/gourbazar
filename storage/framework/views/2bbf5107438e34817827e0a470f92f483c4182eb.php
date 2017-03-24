@@ -3,7 +3,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
     <main class="main-content" role="main">
-        <div class="page-header" style="background-image: url(/frontend/images/generic_header_image2966.jpg)">
+        <div class="page-header" style="background-image: url(/frontend/images/blog-banner.jpg)">
             <div class="page-header-container hover-target">
                 <div class="page-header-content underline-animation">
                     <h2>আমাদের ব্লগ</h2>
@@ -22,7 +22,7 @@ GOUR BAZAR | BUY MANGO ONLINE
                             <div class="blog-index-image" style="background-image: url('/<?php echo e($blog->image); ?>');"></div>
                         </a>
                         <div class="blog-index-copy">
-                            <a href="<?php echo e(url('our-blog', [$blog->id, str_slug($blog->title, '-')] )); ?>"><h4><?php echo e($blog->title); ?></h4></a>
+                            <h3><?php echo e($blog->title); ?></h3>
                             <a href="<?php echo e(url('our-blog', [$blog->id, str_slug($blog->title, '-')] )); ?>" class="text-center">READ MORE</a>
                         </div>                    
                     </div>

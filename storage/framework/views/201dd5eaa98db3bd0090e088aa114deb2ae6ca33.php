@@ -72,7 +72,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 	            <div class="third-item" style="background-image:url(/<?php echo e($service->image); ?>)">
 	             	<div class="one-third-cta">
 		                <div class="one-third-cta-container">
-		                  	<a href="#">
+		                  	<a href="<?php echo e(url('our-service', [$service->id, str_slug($service->title, '-')] )); ?>">
 			                    <h3><?php echo e($service->title); ?></h3>                    
 			                    <ul>
 			                      <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
@@ -110,60 +110,26 @@ GOUR BAZAR | BUY MANGO ONLINE
 		      	<h4 class="section-subtitle">এই মুহূর্তে সব থেকে বেশি বিক্রিত</h4>
 	        </div>      
 	        <div class="grid-uniform">
+	        <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 	          	<div class="grid_item col-sm-4 product-grid-item">
-		            <a class="product-image-tile" href="#">
+		            <a class="product-image-tile" href="<?php echo e(url('products', [$product->id, make_slug($product->name)] )); ?>">
 		              	<div class="reveal">
-			                <img class="img-responsive" src="/frontend/images/pillow-front-small.jpg" alt="Ripple Fabric in Blush" />
-			                <div class="hidden">
-			                  	<img class="img-responsive" src="/frontend/images/pillow-back-small.jpg" alt="Ripple Fabric in Blush" />
-			                </div>      
+			                <img class="img-responsive" src="/<?php echo e($product->image); ?>" alt="Ripple Fabric in Blush" />
+			                <!-- <div class="hidden">
+			                     	<img class="img-responsive" src="/frontend/images/pillow-back-small.jpg" alt="Ripple Fabric in Blush" />
+			                   </div>    -->   
 		              	</div>
 		            </a>
 		            <div class="figcaption hover">
-		              	<a href="#">
-			                <p class="collection-product-title">Ripple Fabric in Blush</p>
+		              	<a href="<?php echo e(url('products', [$product->id, make_slug($product->name)] )); ?>">
+			                <p class="collection-product-title"><?php echo e($product->name); ?></p>
 			                <p class="price_wrapper">
-			                  	<span class="price">From<span class="money">$3.00</span></span>        
+			                  	<span class="price">প্রতি কেজি <span class="money">৳ <?php echo e($product->price); ?></span></span>        
 			                </p>
 		              	</a>
 		            </div>
 	          	</div>
-	          	<div class="grid_item col-sm-4 product-grid-item">
-		            <a class="product-image-tile" href="#">
-		              	<div class="reveal">
-			                <img class="img-responsive" src="/frontend/images/pillow-front-small.jpg" alt="Shibori Napkins in Gray-Lilac" />     
-			                <div class="hidden">
-			                  	<img class="img-responsive" src="/frontend/images/pillow-back-small.jpg" alt="Shibori Napkins in Gray-Lilac" />
-			                </div>      
-		             	</div>
-		            </a>
-		            <div class="figcaption hover">
-		              	<a href="#">
-			                <p class="collection-product-title">Shibori Napkins in Gray-Lilac</p>
-			                <p class="price_wrapper">
-			                  	<span class="price">From<span class="money">$90.00</span></span>     
-			                </p>
-		              	</a>
-		            </div>
-	          	</div>
-	          	<div class="grid_item col-sm-4 product-grid-item" >
-		            <a class="product-image-tile" href="#">
-		              	<div class="reveal">
-		                	<img class="img-responsive" src="/frontend/images/pillow-front-small.jpg" alt="Water Pillow" />
-			                <div class="hidden">
-			                  	<img class="img-responsive" src="/frontend/images/pillow-back-small.jpg" alt="Water Pillow" />
-			                </div>
-		              	</div>
-		            </a>
-		            <div class="figcaption hover">
-		              	<a href="#">
-			                <p class="collection-product-title">Water Pillow</p>
-			                <p class="price_wrapper">
-			                  	<span class="price"><span class="money">$314.00</span></span>
-			                </p>
-		              	</a>
-		            </div>
-	          	</div>
+			<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         	</div>
       	</div>
     </div>
@@ -177,7 +143,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 	        <div class="simple-carousel">
 			<?php $__currentLoopData = $blogs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $blog): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 	          	<div class="tile-image hover-target" style="background-image: url(/<?php echo e($blog->image); ?>)">
-	             	<a target="_blank" href="#"> 
+	             	<a target="_blank" href="<?php echo e(url('our-blog', [$blog->id, str_slug($blog->title, '-')] )); ?>"> 
 	            		<div class="tile-cta">
 	              			<div class="border-tile underline-animation">
 				                <p>বিস্তারিত পড়ুন</p>

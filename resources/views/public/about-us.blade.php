@@ -4,7 +4,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 @endsection
 @section('content')
 <main class="main-content">
-	<div class="page-header" style="background-image: url(/frontend/images/generic_header_image2966.jpg)">
+	<div class="page-header" style="background-image: url(/frontend/images/about-banner.jpg)">
 	  	<div class="page-header-container hover-target">
 		    <div class="page-header-content underline-animation">
 		      	<p>গৌড়বাজার</p>
@@ -14,82 +14,45 @@ GOUR BAZAR | BUY MANGO ONLINE
 	</div>
 	<div class="scroll-offset">
 	  	<div class="container">
-		    <div class="centered-section-title page-section page-section-first hover-target">
-		      	<h2 class="underline-animation">Our goal is to inspire unique, beautiful and imagined spaces.</h2>
+		    <div class="centered-section-title hover-target">
+		      	<h2 class="underline-animation">আমাদের লক্ষসমূহ অনন্য, সুন্দর ও কাল্পনিক স্থান থেকে অনুপ্রাণিত !</h2>
 		    </div>
-		    <div class="flex-centered-parent">
-			    <div class="col-sm-5">
-			        <div class="half-copy">
-						<h3 class="key-line">How we do just that…</h3>
-						<p>We create products that can be effortlessly mixed and matched, so your personal space truly becomes “yours.” Our colors and prints are developed to complement the things you already love in your home. And our ethically-made designs, while beautiful, are also functional, meant to get better the more you use them.</p>
-			        </div>
-			    </div>
-		      	<div class="col-sm-2 half-divider"></div>
-		      	<div class="col-sm-5">	
-		      		<img src="/frontend/images/about_us_2.jpg" class="img-responsive" alt="">
-		      	</div>
-		    </div>
-	  	</div>
-	</div>
-	<div class="scroll-offset">
-	  	<div class="container">
 		    <div class="flex-centered-parent page-section">
 		      	<div class="col-sm-5">		        
-		        	<img src="/frontend/images/about_us_2.jpg" class="img-responsive" alt="">
+		        	<img src="/frontend/images/about.jpg" class="img-responsive" alt="">
 		      	</div>
 		      	<div class="col-sm-7">
 			        <div class="half-copy">
-						<h3 class="key-line">About Rebecca</h3>
-						<h2>Brooklyn based designer and artist Rebecca Atwood believes in the art of making.</h2>
-						<p>I believe that how you get to a finished product is just as important as the final design. Each step of my process, from first sketch to production techniques to our shipping methods, is so important. I don’t believe in perfection, but I do ask myself, “How can I do things better?” frequently. I like to think you can see that when you purchase one of our pieces. And I like to think that our process is part of the reason you can feel truly good about bringing our pieces into your home.</p>
+						<h3 class="key-line">গৌড়বাজার সম্পর্কে</h3>
+						<h2>আমরা নুতুনত্ত্ব ও সৃষ্টিশীল চিন্তা ধারায় বিশ্বাসী </h2>
+						<p>আমাদের এই কোম্পানিটি হচ্ছে বাংলাদেশের সর্ব পশ্চিমের জেলা চাঁপাইনবাবগঞ্জ ভিক্তিক একটি প্রারম্ভিক কোম্পানী। চাঁপাইনবাবগঞ্জ জেলা নকশী কাঁথা, রেশম, কাঁসা ও আমের জন্যে বিখ্যাত। শুধুই বিখ্যাত না এসকল ক্ষেত্রে চাঁপাইনবাবগঞ্জকে বাংলাদেশের রাজধানী বলা হয় । চাঁপাইনবাবগঞ্জ জেলা প্রাচীন নিদের্শন ও ইতিহাস-ঐতিহ্য তে ভরপুর । প্রাচীন বাংলার রাজধানী ছিল গৌড় যার অংশ হচ্ছে চাঁপাইনবাবগঞ্জ । চাঁপাইনবাবগঞ্জ এর ঐতিহ্যের কথা ভেবেই আমাদের কোম্পানিটির নাম দিয়েছি গৌড়বাজার ।  আমের রাজধানী হচ্ছে  চাঁপাইনবাবগঞ্জ, তাই আমরা এই প্রতিষ্ঠানটি প্রতিষ্ঠালগ্নে সারা বাংলাদেশে আম সরবরাহ দেয়ার লক্ষ্য নিয়ে কাজ শুরু করি ২০১৫ সালের শেষের দিকে । বর্তমানে গৌড়বাজার বাংলাদেশের বাজারে আম সরবরাহ করার পাশাপাশি বাংলাদেশের দ্বিতীয় বৃহত্তম স্থলবন্দর সোনামসজিদ বন্দর থেকে বিভিন্ন প্রকারের পাথর সরবরাহ করে থাকে । ভবিষ্যতে আমরা চাঁপাইনবাবগঞ্জ জেলার ইতিহাস-ঐতিহ্য এর অংশ নকশী কাঁথা ও রেশম কাপড় সারা দেশে সরবরাহ করব।</p>
 			        </div>
 		      	</div>
 		    </div>
 	    	<div class="about-time-line page-section">
+			    <div class="centered-section-title hover-target">
+			      	<h2 class="underline-animation">হামরা চাঁপাইয়ের </h2>
+			    </div>
+				@foreach($teams as $team)
 	     		<div class="col-sm-3 time-line-event">
+			        <img src="/{{$team->image}}" class="img-responsive" alt="">
 			        <div class="above-line">
-			          	<h4>BORN & RAISED</h4>
-			          	<span class="location-pin icon icon-ra_location">Cape Cod, Massachusetts</span>
-			          	<p>Surrounded by the ocean, antiques and my family’s restaurant</p>
+			          	<h3>{{$team->name}}</h3>
+			          	<h4 class="location-pin icon icon-ra_location">{{$team->position}}</h4>
+			          	{!!$team->description!!}
+	                    <div class="member-social">            
+	                        <ul>
+	                            <li><a href="mailto:{{$team->email}}"><i class="fa fa-envelope"></i></a></li>
+	                            <li><a target="_blank" href="http://facebook.com/{{$team->facebook}}"><i class="fa fa-facebook"></i></a></li>
+	                            <li><a target="_blank" href="http://twitter.com/{{$team->twitter}}"><i class="fa fa-twitter"></i></a></li>
+	                        </ul>   
+	                    </div>
 			        </div>
 			        <div class="time-line-dots">
 			          	<div class="time-line-line"></div>
 			        </div>
-			        <img src="/frontend/images/about_us_time.jpg" class="img-responsive" alt="">
 	      		</div>
-			    <div class="col-sm-3 time-line-event">
-			        <div class="above-line">
-			          	<h4>EDUCATION</h4>
-			          	<span class="location-pin icon icon-ra_location">Providence, Rhode Island</span>
-			          	<p>Received my BFA in painting from Rhode Island School of Design</p>
-			        </div>
-			        <div class="time-line-dots">
-			          	<div class="time-line-line"></div>
-			        </div>			        
-			        <img src="/frontend/images/about_us_time.jpg" class="img-responsive" alt="">
-			    </div>
-			    <div class="col-sm-3 time-line-event">
-			        <div class="above-line">
-			          	<h4>PROFESSIONAL WORK</h4>
-			          	<span class="location-pin icon icon-ra_location">United States & United Kingdom</span>
-			          	<p>Worked with major retailers as a trend forecaster and design consultant</p>
-			        </div>
-			        <div class="time-line-dots">
-			          	<div class="time-line-line"></div>
-			        </div>
-			        <img src="/frontend/images/about_us_time.jpg" class="img-responsive" alt="">
-			    </div>
-	      		<div class="col-sm-3 time-line-event">
-			        <div class="above-line">
-			          	<h4>CURRENT LIFE</h4>
-			          	<span class="location-pin icon icon-ra_location">Brooklyn, New York</span>
-			          	<p>Owning and operating my namesake collection of homegoods</p>
-			        </div>
-			        <div class="time-line-dots">
-			          	<div class="time-line-line"></div>			        	
-			        </div>
-			        <img src="/frontend/images/about_us_time.jpg" class="img-responsive" alt="">
-	      		</div>
+	      		@endforeach	      		
 	    	</div>
 	  	</div>
 	</div>
@@ -107,7 +70,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 		     	</div>
 		      	<div class="col-sm-2 half-divider"></div>
 		      	<div class="col-sm-5 flex-centered-children">
-		      		<img src="/frontend/images/about_us_2.jpg" class="img-responsive" alt="">
+		      		<img src="/frontend/images/inspiration.jpg" class="img-responsive" alt="">
 		      	</div>
 		    </div>
 		    <div class="half-section flex-centered-parent">
@@ -119,7 +82,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 		      	</div>
 		      	<div class="col-sm-2 half-divider"></div>
 		      	<div class="col-sm-5 flex-centered-children">
-		      		<img src="/frontend/images/about_us_2.jpg" class="img-responsive" alt="">
+		      		<img src="/frontend/images/self-care.jpg" class="img-responsive" alt="">
 		      	</div>
 		    </div>
 		    <div class="half-section flex-centered-parent">
@@ -131,7 +94,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 		      	</div>
 		      	<div class="col-sm-2 half-divider"></div>
 		      	<div class="col-sm-5 flex-centered-children">
-		      		<img src="/frontend/images/about_us_2.jpg" class="img-responsive" alt="">
+		      		<img src="/frontend/images/creativity.jpg" class="img-responsive" alt="">
 		    	</div>
 		    </div>
 		    <div class="half-section flex-centered-parent">
@@ -143,7 +106,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 		      	</div>
 		      	<div class="col-sm-2 half-divider"></div>
 	      		<div class="col-sm-5 flex-centered-children">
-		      		<img src="/frontend/images/about_us_2.jpg" class="img-responsive" alt="">
+		      		<img src="/frontend/images/presence.jpg" class="img-responsive" alt="">
 		      	</div>
 		    </div>
 		    <div class="half-section flex-centered-parent">
@@ -155,7 +118,7 @@ GOUR BAZAR | BUY MANGO ONLINE
 		      	</div>
 		      	<div class="col-sm-2 half-divider"></div>
 		      	<div class="col-sm-5 flex-centered-children">
-		      		<img src="/frontend/images/about_us_2.jpg" class="img-responsive" alt="">
+		      		<img src="/frontend/images/responsibility.jpg" class="img-responsive" alt="">
 		      	</div>
 		    </div>
 		</div>
